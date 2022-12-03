@@ -61,6 +61,7 @@ git config --global user.email "leon@email.com"
 |`pwd`|"print working directory", prints the path to the working directory (where you currently are)|
 |`cd`|"change directory", to change and move between folders.|
 |`cd ..`|to move back one directory.|
+|`code .`|open vscode from the current working directory.|
 
 # Terminal - Creating Files and Folders
 
