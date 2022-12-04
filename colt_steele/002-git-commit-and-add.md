@@ -46,3 +46,56 @@
 ## `git log`
 
 - `git log`: shows a list of all the commits made to a repository.
+
+---
+
+# Commits in Detail
+
+## Atomic Commits
+
+- Keep each commit focused on a single thing.
+- A commit should encompass a single feature, change or fix.
+
+## Avoid `git commit` without `-m`
+
+- This opens up VIM editor.
+- Type `i` to enter the insert mode as it forces you to enter a commit message.
+- Then, _ESCAPE KEY_ --> `:wq` --> _ENTER_
+  - `w`: write, `q`: quit
+
+## `code --wait`
+
+- `git config --global core.editor "code --wait"` (FOR VSCode)
+- COMMAND + SHIFT + P --> Install 'code' command in PATH.
+- `git commit`
+  - opens up a git editor in vscode instead of VIM.
+  - enter the commit message.
+  - once done, just close the file and it will commit.
+
+## Shorten Commit Message in `git log`
+
+- `git log --oneline"
+  - view the first line of each commit message.
+
+## Amend Commits
+
+- After making a commit, maybe you _forgot to include a file_, or there is a _typo in commit message_.
+- `git commit --amend`
+  - redo the previous 1 commit.
+  - opens up VIM
+- `git add` then commit again.
+
+## `.gitignore`
+
+- [Useful .gitignore](https://www.toptal.com/developers/gitignore/)
+- Can tell Git which files and directories to ignore in a given repository, using a `gitignore` file.
+- Will also ignore any changes to those files.
+- Useful for file you never want to commit:
+  - Secrets, API Keys, credentials, etc.
+  - Operating System Files (.DS_Store on Mac)
+  - Log Files
+  - Dependencies & Packages
+- Put in the root of the repository.
+  - write exact file names
+  - write folder name
+  - `*.py`: ignore all python files. or `*.log`: ignore all log files.
