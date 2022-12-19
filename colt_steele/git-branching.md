@@ -18,13 +18,22 @@
   - make a new branch **based upon the current HEAD**
   - just creates the branch. does not switch to that branch (HEAD stays the same).
     - `(HEAD -> master, bugfix)`
-- `git switch <branch name>`
-    - to switch to a new branch.
-
 
 ## Git Switch
 
+- `git switch <branch name>`
+  - to switch to a new branch.
+- `git switch -c <branch name>`
+  - the `-c` flag to create a new branch and switch to it all in one go
+  - `-c`: create
+
 ## Git Checkout
+
+- `git checkout <branch name>`
+  - switch branches (old school way of switching)
+  - checkout has more functionalities than git switch.
+- `git checkout -b <branch name>`
+  - create a new branch and switch to it all in one go.
 
 ## Deleting & Renaming Branches
 

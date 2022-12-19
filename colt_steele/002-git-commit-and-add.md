@@ -42,6 +42,8 @@
 - commit changes from the staging area. need to provide a commit message.
 - When saving a file, we are saving the state of a single file.
 - With Git, we can save the state of multiple files and folders together.
+- `git commit -a -m`
+  - add and commit at the same time.
 
 ## `git log`
 
