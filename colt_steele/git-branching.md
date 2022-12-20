@@ -35,6 +35,14 @@
 - `git checkout -b <branch name>`
   - create a new branch and switch to it all in one go.
 
+## Switching Branches with Unstaged Changes
+
+- If you modified an old file, need to add & commit or stash those changes before switching branches.
+- If you created a new file, it is possible to switch branches.
+  - However, it is recommended to add & commit or stash the changes before switching branches.
+
 ## Deleting & Renaming Branches
+
+
 
 ## HEAD & Refs
