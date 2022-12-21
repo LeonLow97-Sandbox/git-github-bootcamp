@@ -43,6 +43,15 @@
 
 ## Deleting & Renaming Branches
 
+- `git branch -D <branch name>`
+  - delete a branch even if it has not been fully merged.
+  - must not be on the branch to delete it.
+  - useful to delete a branch that contains work that you no longer need or want to keep. 
+  - Similar to `git branch -d <branch name>` but it adds the `--force` tag.
 
+- `git branch -m <branch name>`
+  - rename a branch.
+  - must be on the branch itself to rename it.
 
 ## HEAD & Refs
+
