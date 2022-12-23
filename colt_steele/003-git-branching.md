@@ -14,6 +14,8 @@
 - `git branch`:
   - view the existing branches.
   - The default branch in every git repo is master, can configure this.
+- `git branch -v`:
+  - Shows the branches and the last commit of each branch.
 - `git branch <branch-name>`
   - make a new branch **based upon the current HEAD**
   - just creates the branch. does not switch to that branch (HEAD stays the same).
@@ -44,9 +46,10 @@
 ## Deleting & Renaming Branches
 
 - `git branch -D <branch name>`
+
   - delete a branch even if it has not been fully merged.
   - must not be on the branch to delete it.
-  - useful to delete a branch that contains work that you no longer need or want to keep. 
+  - useful to delete a branch that contains work that you no longer need or want to keep.
   - Similar to `git branch -d <branch name>` but it adds the `--force` tag.
 
 - `git branch -m <branch name>`
@@ -57,8 +60,5 @@
 
 - HEAD refers to the current commit in the local repository.
 - The HEAD pointer points to the current commit and determines which commit is considered the current commit.
-- Can use the HEAD pointer to reference other commits in the repository, such as by using the syntax "HEAD~1" to refer to the commit that comes immediately before the current commit. 
+- Can use the HEAD pointer to reference other commits in the repository, such as by using the syntax "HEAD~1" to refer to the commit that comes immediately before the current commit.
 - The HEAD pointer is like a cursor that points to the current position in the commit history of the repository and allows you to navigate and manipulate the commit history.
-
-
-

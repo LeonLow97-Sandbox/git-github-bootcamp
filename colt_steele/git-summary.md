@@ -2,7 +2,7 @@
 
 ## Git Commit
 
-| Concept | Description |
+| Git Command | Description |
 |---------|-------------|
 | Git repository | A workspace that tracks and manages the files within a folder. Can create as many repositories on your machine as needed, each with its own separate history and content. |
 | `git status` | Gives information on the current status of a Git repository and its contents. |
@@ -16,12 +16,14 @@
 
 ## Git Branching
 
-| Concept | Description |
-|---------|-------------|
-| Git HEAD | A pointer that refers to the current location in the repository. Points to the latest commit made on the current branch. Can be switched to a new branch by changing HEAD's reference. |
-| Git branch | A separate line of development in a Git repository. The default branch is `master`, but new branches can be created using the `git branch` command. |
-| Git switch | A command to switch to a new branch. Can be used with the `-c` flag to create a new branch and switch to it all in one go. |
-| Git checkout | A command to switch to a new branch. Can be used with the `-b` flag to create a new branch and switch to it all in one go. |
-| Switching branches with unstaged changes | If you have modified an old file and want to switch branches, it is a good idea to either commit those changes or stash them before switching branches. If you have created a new file, it is recommended to either commit or stash the changes before switching branches. |
-| Deleting & renaming branches | Can use the `git branch -d <branch-name>` command to delete a branch, and the `git branch -m <old-branch-name> <new-branch-name>` command to rename a branch. |
-| HEAD & refs | HEAD is a special reference that always points to the current branch, while other references are used to point to specific commits. |
+| Git Command | Description |
+| --- | --- |
+| `git branch` | View the existing branches. The default branch in every Git repository is "master," but this can be configured. |
+|`git branch -v`|Shows the branches and the last commit of each branch.|
+| `git branch <branch-name>` | Create a new branch based on the current HEAD. This command does not switch to the new branch; the HEAD remains unchanged. |
+| `git switch <branch-name>` | Switch to an existing branch. |
+| `git switch -c <branch-name>` | Create a new branch and switch to it all in one go. The `-c` flag stands for "create." |
+| `git checkout <branch-name>` | Switch to an existing branch (old school way of switching branches). The `git checkout` command has more functionality than `git switch`. |
+| `git checkout -b <branch-name>` | Create a new branch and switch to it all in one go. |
+| `git branch -D <branch-name>` | Delete a branch, even if it has not been fully merged. You must not be on the branch to delete it. This command is useful for deleting a branch that contains work that you no longer need or want to keep. This command
+
