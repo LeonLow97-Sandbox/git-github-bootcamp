@@ -13,11 +13,17 @@
   1. Switch to the branch you want to merge the changes into (the receiving branch)
      - `git switch master`
   2. Use the `git merge` command to merge changes from a specific branch into the current branch.
-     - `git merge bugfix` 
+     - `git merge bugfix`
 
 ## Git Merge & Merge Commits
 
-- 
+- E.g., One of your teammates merged in a new feature or change to master while you were working on a branch.
+  - Rather than performing a simple fast forward, git performs a "merge commit".
+  - End up with a new commit on the master branch.
+  - Git will prompt you for a message.
+
+<img src="./pics/merge-example.png" alt="Merging Example" />
+<img src="./pics/merge-commit.png" alt="Merging Commit" />
 
 ## Resolving Merge Conflicts
 
