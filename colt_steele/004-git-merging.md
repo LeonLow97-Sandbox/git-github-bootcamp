@@ -27,4 +27,20 @@
 
 ## Resolving Merge Conflicts
 
+- Merge Conflict
+    - Depending on the specific changes you are trying to merge, Git may not be able to automatically resolve.
+    - Resolve manually.
+- To resolve the conflicts:
+    1. Open up the file(s) with merge conflicts.
+    2. Edit the file(s) to remove the conflicts. Decide which branch's content you want to keep in each conflict. Or keep the content from both.
+    3. Remove the conflict "markers" in the document.
+    4. Add your changes and then make a commit.
+
 ## Using VSCode To Resolve Conflicts
+
+- Accept Current Changes.
+- Accept Incoming Changes.
+- Accept Both Changes.
+
+
+
