@@ -55,3 +55,10 @@
 
 ## HEAD & Refs
 
+- HEAD refers to the current commit in the local repository.
+- The HEAD pointer points to the current commit and determines which commit is considered the current commit.
+- Can use the HEAD pointer to reference other commits in the repository, such as by using the syntax "HEAD~1" to refer to the commit that comes immediately before the current commit. 
+- The HEAD pointer is like a cursor that points to the current position in the commit history of the repository and allows you to navigate and manipulate the commit history.
+
+
+
