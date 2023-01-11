@@ -21,3 +21,6 @@
 - `git diff branch1..branch2`
 
 # Diffing Commits
+
+- To compare 2 commits, provide git diff with the commit hashes of the commits in question.
+- `git diff commit1..commit2`
