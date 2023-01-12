@@ -27,4 +27,25 @@
 
 # Working with multiple stashes
 
+- Add multiple stashes onto the stack of stashes. They will all be stahed in the order you added them.
+
+```
+git stash
+    do some other stuff...
+git stash
+    do some other stuff...
+git stash
+```
+
+- `git stash list`: to view all stashes
+
+```git
+stash@{0}: WIP on rainbow: dd6ad48 remove background color
+stash@{1}: WIP on rainbow: dd6ad48 remove background color
+stash@{2}: WIP on rainbow: dd6ad48 remove background color
+stash@{3}: WIP on goodbye: d6f9c8d create index.html and app.css
+```
+
+- `git stash apply stash@{2}`: specify a particular stash
+
 # Applying and Clearing The Stash
