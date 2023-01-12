@@ -21,6 +21,10 @@
 
 # Git Stash Apply
 
-# Applying anc Clearing The Stash
+- `git stash apply`: apply whatever is stashed away, without removing it from the stash. 
+    - `git stash pop` is different because it removes it from the stash but `git stash apply` does not.
+    - `git stash apply` useful if you want to apply stashed changes to multiple branches.
 
 # Working with multiple stashes
+
+# Applying and Clearing The Stash
