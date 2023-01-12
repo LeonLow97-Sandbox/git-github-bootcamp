@@ -46,6 +46,8 @@ stash@{2}: WIP on rainbow: dd6ad48 remove background color
 stash@{3}: WIP on goodbye: d6f9c8d create index.html and app.css
 ```
 
-- `git stash apply stash@{2}`: specify a particular stash
-
 # Applying and Clearing The Stash
+
+- `git stash apply stash@{2}`: specify a particular stash
+- `git stash drop stash@{2}`: remove a particular stash
+- `git stash clear`: removes all stash
