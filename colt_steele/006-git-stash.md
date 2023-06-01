@@ -13,21 +13,24 @@
 # Git Stash Save
 
 - `git stash save` similar to `git stash`
+- `git stash push -m <stash_name>` to give a name for the stash.
 
 # Git Stash Pop
 
 - `git stash pop`: remove the most recently stashed changes in the stash and re-apply them to the working copy.
     - pop in same branch or different branch.
+- `git stash pop stash^{/<stash_name>}`
 
 # Git Stash Apply
 
 - `git stash apply`: apply whatever is stashed away, without removing it from the stash. 
     - `git stash pop` is different because it removes it from the stash but `git stash apply` does not.
     - `git stash apply` useful if you want to apply stashed changes to multiple branches.
+- `git stash apply stash^{/<stash_name>}`
 
 # Working with multiple stashes
 
-- Add multiple stashes onto the stack of stashes. They will all be stahed in the order you added them.
+- Add multiple stashes onto the stack of stashes. They will all be stashed in the order you added them.
 
 ```
 git stash

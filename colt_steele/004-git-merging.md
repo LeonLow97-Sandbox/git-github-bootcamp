@@ -41,6 +41,6 @@
 - Accept Current Changes.
 - Accept Incoming Changes.
 - Accept Both Changes.
-
+ 
 
 
