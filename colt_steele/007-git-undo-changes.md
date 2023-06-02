@@ -49,3 +49,22 @@
     - Made changes to a file in working directory but don't want to keep those changes in that file.
     - To revert file back to how it looked like in the last commit, use `git checkout HEAD <filename>` to discard any changes in that file, reverting back to HEAD.
     - Alternatively, use `git checkout -- <filename>`
+
+## `git restore`
+
+- `git restore <file_name>`
+    - Undo modifications in the **working directory**, reverting the file to the last committed state.
+    - Restores the file to the contents in the HEAD.
+- `git restore --source HEAD~1 <file_name>`
+    - Restore the contents of the file to its state from the commit prior to HEAD.
+- Unlike `git restore <file_name>` which restores the file to the current commit, `git restore --source HEAD~1 <file_name>` restores the file to the previous commit (one commit before the current commit).
+- `git restore --staged <file_name>`
+    - Restore files in staging area that were added by `git add` back to the working directory.
+    - E.g., `git restore --staged app.js` or `git restore --staged .` for all files in the staging area.
+
+## `git reset`
+
+
+
+## `git revert`
+
