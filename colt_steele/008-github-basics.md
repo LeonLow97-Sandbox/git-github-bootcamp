@@ -62,10 +62,11 @@
 
 ## Pushing to Upstream
 
-- `git push -u origin master` or `git push --set-upstream origin master`
+- `git push -u origin main` or `git push --set-upstream origin main`
   - `-u` or `--set-upstream` is used to set the upstream branch.
   - Usually run this command for the first time then can use `git push` without specifying the branch name in future.
   - By setting the upstream branch, we establish a connection between local branch and the corresponding branch on the remote repository.
   - Allows us to easily push and pull changes without having to specify the branch every time.
+- `git branch -vv`: to check upstream branch `origin/main`.
 - `git branch -M main`
   - Renames the current branch to "main".
