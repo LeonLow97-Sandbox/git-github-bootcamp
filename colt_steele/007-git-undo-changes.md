@@ -64,7 +64,12 @@
 
 ## `git reset`
 
-
+- `git reset <commit_hash>`
+    - To undo commits and reset the repo back to a specific commit.
+    - Commits removed but the file changes based on the removed commits will appear in the working directory.
+- `git reset --hard <commit_hash>`
+    - Undo both the commits and the actual changes in the files.
+    - `git reset --hard HEAD~1` deletes the last commit and associated changes.
 
 ## `git revert`
 
