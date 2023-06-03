@@ -57,7 +57,18 @@ Your branch is up to date with 'origin/main'.
 
 ## Fetching
 
-- `git fetch`
+- Fetching allows us to download changes from a remote repository but those changes will not be automatically integrated into the working files.
+- Can see what others have worked on, without having to merge those changes into the local repository.
+- `git fetch <remote>`
+    - Fetches branches and history from a specific remote repository.
+    - Only updates remote tracking branches.
+    - If only type `git fetch`, remote branch defaults to origin.
+    - E.g., `git fetch origin` fetches all changes from the origin remote repository.
+- `git fetch <remote> <branch>`
+    - Fetches a specific branch from a remote.
+    - E.g., `git fetch origin master` retrieves the latest information from the master branch on the origin remote repository.
+
+<img src="./pics/github-pulling-remote-branch-changes.png" alt="HEAD" width="50%" />
 
 ## Pulling
 
