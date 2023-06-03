@@ -70,3 +70,13 @@
 - `git branch -vv`: to check upstream branch `origin/main`.
 - `git branch -M main`
   - Renames the current branch to "main".
+
+## Markdown Links
+
+- [Markdown Docs](https://daringfireball.net/projects/markdown/syntax)
+- [Markdown It](https://markdown-it.github.io/)
+
+## GitHub Gists
+
+- Used to share code snippets
+- [GitHub Gist](gist.github.com)
