@@ -26,4 +26,8 @@ git rebase master
 
 ## When not to use git rebase
 
-# Interactive Rebase
+- Never rebase commits that have been shared with others.
+- If you have already pushed commits up to GitHub (remote repository), do not rebase them unless no one on the team is using those commits.
+- Don't want to rewrite any git history that other people already have.
+- Tedious to reconcile the alternate histories.
+
