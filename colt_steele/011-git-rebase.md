@@ -31,3 +31,26 @@ git rebase master
 - Don't want to rewrite any git history that other people already have.
 - Tedious to reconcile the alternate histories.
 
+## Interactive Rebase
+
+- To rewrite, delete, rename, reorder commits (before sharing them).
+- `git rebase -i HEAD~4`
+
+  - `-i`: enters the interactive mode for rebase.
+  - allows us to edit commits, add files, drop commits, etc.
+  - need to specify how far back we want to rewrite commits with e.g. `HEAD~4`.
+  - not rebasing onto another branch but rebasing a series of commits onto the current HEAD.
+
+## Commands for Interactive Rebase
+
+- Interactive rebase also rewrites the commit history, so be careful when using this too.
+
+| Commands | Description                                                                                                        |
+| -------- | ------------------------------------------------------------------------------------------------------------------ |
+| `pick`   | use the commit, no changes.                                                                                        |
+| `reword` | use the commit, but edit the commit message                                                                        |
+| `edit`   | use the commit, but stop for amending.                                                                             |
+| `fixup`  | use commit contents but meld it into previous commit and discard the commit message. similar to combining commits. |
+| `drop`   | remove commit                                                                                                      |
+
+<img src="./pics/interactive-rebase.png" alt="HEAD" width="30%" />
